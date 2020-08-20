@@ -1,0 +1,194 @@
+body{
+  font-family: 'Manrope', sans-serif;
+  font-size: 13px;
+  background-color: #ecf2f8;
+}
+
+h2{
+  font-size: 13px;
+}
+
+
+.card-container{
+  display: flex;
+  max-width: 850px;
+  margin: 150px auto;
+  background-color: white;
+  border-radius: 2%;
+
+
+
+
+}
+
+.left-side{
+  display: flex;
+  align-items: stretch;
+  border-radius: 4%;
+}
+
+.body-container{
+  flex: 60%;
+  display: flex;
+  flex-direction: column;
+  margin: 1% 5%;
+
+}
+
+.top-side{
+  flex: 1;
+}
+
+.bottom-side{
+  flex: 1;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+}
+
+.row-1{
+  flex:1;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+
+}
+.row-2{
+
+display: flex;
+justify-content: flex-end;
+align-items: flex-start;
+margin-right: 5%;
+
+}
+.share-button{
+  justify-content: flex-end;
+  margin-right: 10%;
+  margin-top: 2%;
+
+}
+.author{
+  padding-left: 4%;
+}
+/* styling properties */
+
+.avatar{
+  height: 50px;
+  width: 50px;
+  border-radius: 100%;
+}
+
+.main-image{
+  height: 300px;
+  width: 350px;
+  border-radius: 2% 0 0 2%;
+}
+
+.share-button{
+  border-radius: 100%;
+  font-size: 1.5rem;
+  background-color: #ecf2f8;
+  border-style: none;
+}
+
+/* toggle for share button colour */
+.sbc{
+  background-color: #48556a;
+}
+
+
+.share{
+  color: #9eafc2;
+  font-size: 1rem;
+
+}
+
+.main-text{
+  color: #48556a;
+  font-weight: 700;
+}
+
+.main-body{
+  color: #6d7f97;
+  line-height: 1.5;
+  width: 95%;
+  text-align: left;
+  font-weight: 500;
+}
+
+.author{
+  color: #48556a;
+}
+
+/* share icons */
+.s1{
+  font-size: 1rem;
+  color: white;
+  margin-left: 10px;
+}
+
+
+
+/* POP UP ON SHARE BUTTON */
+
+/* Popup container */
+.popup{
+  position: relative;
+  display: inline-block;
+  cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+/* The actual popup */
+.popup .popuptext {
+  visibility: hidden;
+  width: 200px;
+  background-color: #48556a;
+  color: white;
+  text-align: center;
+  border-radius: 4%;
+  padding: 8px 0;
+  position: absolute;
+  z-index: 1;
+  bottom: 125%;
+  margin-left: -85px;
+
+}
+
+/* Popup arrow */
+
+.popup .popuptext::after{
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  margin-left: -5px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: #48556a transparent transparent transparent;
+}
+
+/* Class is toggled to show popup */
+
+.popup .show{
+  visibility: visible;
+  -webkit-animation: fadeIn 1s;
+  animation: fadeIn 1s;
+}
+
+@-webkit-keyframes fadeIn{
+  from {opacity: 0;}
+  to {opacity: 1;}
+}
+
+@keyframes fadeIn {
+  from {opacity: 0;}
+  to {opacity: 1;}
+}
+
+@@media query {
+
+}
